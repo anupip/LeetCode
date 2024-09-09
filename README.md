@@ -16,4 +16,12 @@ A collection of LeetCode problems and my solutions. I began uploading to this re
 |  |
 | ------- |
 | [0136-single-number](https://github.com/anupip/LeetCode/tree/master/0136-single-number) |
+## String
+|  |
+| ------- |
+| [1078-remove-outermost-parentheses](https://github.com/anupip/LeetCode/tree/master/1078-remove-outermost-parentheses) |
+## Stack
+|  |
+| ------- |
+| [1078-remove-outermost-parentheses](https://github.com/anupip/LeetCode/tree/master/1078-remove-outermost-parentheses) |
 <!---LeetCode Topics End-->
