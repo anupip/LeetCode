@@ -1,20 +1,25 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        std::istringstream iss(s);
-        stack<string> stack;
-        string word;
-        while (iss >> word) {
-            stack.push(word);
-        }
-        string result;
-        while (!stack.empty()) {
-            result += stack.top();
-            stack.pop();
-            if (!stack.empty()) {
-                result  += " ";
+        reverse(s.begin(), s.end());
+        int n = s.size();
+        int left = 0;
+        int right = 0;
+        int i = 0;
+        while (i < n) {
+            while (i < n && s[i] == ' ')
+                i++;
+            if (i == n)
+                break;
+            while (i < n && s[i] != ' ') {
+                s[right++] = s[i++];
             }
+            reverse(s.begin() + left, s.begin() + right);
+            s[right++] = ' ';
+            left = right;
+            i++;
         }
-        return result;
+        s.resize(right - 1);
+        return s;
     }
 };
